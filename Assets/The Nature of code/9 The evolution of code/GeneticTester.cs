@@ -43,7 +43,7 @@ public class GeneticTester : MonoBehaviour
 	public bool 				m_PauseOnSelectionPhase = true;		// Flag to pause at the selection stage so you can see the selected object
 	bool 						m_SelectionPhase = false;			// Flag set when in the selection phase
 	
-	public GUIText 				m_GUIText;							// GUIText for displaying the output
+	//public GUIText 				m_GUIText;							// GUIText for displaying the output
 
 
 	void Awake()
@@ -82,13 +82,13 @@ public class GeneticTester : MonoBehaviour
 			}
 		}
 
-		m_GUIText.text = 
-				"Generation: " + m_Generation + "\n" +
-				"Selection Phase: " + m_SelectionPhase + "\n" +
-				"Population: " + m_PopulationCount + "\n" +
-				"Fitness range: " + m_FitnessMin.ToDoubleDecimalString() + "/" + m_FitnessMax.ToDoubleDecimalString() + "\n" +
-				"Mating pool %: " + m_MatingPoolPercentage + "\n" +
-				"Mutation Rate: " + m_MutationRate + "\n";
+		//m_GUIText.text = 
+		//		"Generation: " + m_Generation + "\n" +
+		//		"Selection Phase: " + m_SelectionPhase + "\n" +
+		//		"Population: " + m_PopulationCount + "\n" +
+		//		"Fitness range: " + m_FitnessMin.ToDoubleDecimalString() + "/" + m_FitnessMax.ToDoubleDecimalString() + "\n" +
+		//		"Mating pool %: " + m_MatingPoolPercentage + "\n" +
+		//		"Mutation Rate: " + m_MutationRate + "\n";
 
 	}
 

@@ -9,7 +9,9 @@ public class NoC_1_10_Moving101AcceleratingTowardMouse: MonoBehaviour
 	Vector3 MousePointInWorld;
 	public Camera Cam;
 
+	[Range(0,1)]
 	public float MinSteerStrength = .2f;
+	[Range(0, 1)]
 	public float MaxSteerStrength = .8f;
 
 	// Use this for initialization

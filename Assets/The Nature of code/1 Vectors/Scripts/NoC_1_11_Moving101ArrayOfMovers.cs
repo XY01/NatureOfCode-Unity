@@ -13,8 +13,10 @@ public class NoC_1_11_Moving101ArrayOfMovers: MonoBehaviour
 	Vector3 MousePointInWorld;
 	public Camera Cam;
 
-	public float MinSteerStrength = .2f;
-	public float MaxSteerStrength = .8f;
+	[Range(0,1)]
+	public float MinSteerStrength = .05f;
+	[Range(0, 1)]
+	public float MaxSteerStrength = .2f;
 
 	// Use this for initialization
 	void Start ()
