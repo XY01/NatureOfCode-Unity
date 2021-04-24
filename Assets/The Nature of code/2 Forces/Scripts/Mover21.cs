@@ -6,7 +6,7 @@ public class Mover21 : MonoBehaviour
 	Vector3 		Location;
 	Vector3 		Velocity;
 	Vector3 		Acceleration;
-	public float 	Mass = 10.0f;
+	public float 	Mass = 1;
 
 
 
@@ -25,6 +25,8 @@ public class Mover21 : MonoBehaviour
 		Location += Velocity * Time.deltaTime;	
 
 		transform.position = Location;
+
+		Acceleration = Vector3.zero;
 	}
 
 	public void ApplyForce(Vector3 force)

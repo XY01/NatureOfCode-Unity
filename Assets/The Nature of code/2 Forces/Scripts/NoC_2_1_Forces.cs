@@ -12,14 +12,14 @@ public class NoC_2_1_Forces: MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		MoverObject.Initialize ( 0, 0, 10f );
+		MoverObject.Initialize (MoverObject.transform.position.x, MoverObject.transform.position.y, 5f );
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		MoverObject.ApplyForce (WindForce);
-		MoverObject.ApplyForce (Gravity);
+		MoverObject.ApplyForce (WindForce * Time.deltaTime);
+		MoverObject.ApplyForce (Gravity * Time.deltaTime);
 		MoverObject.CheckEdges (AreaSize.x, AreaSize.y);
 	}
 
