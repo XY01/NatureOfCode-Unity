@@ -32,8 +32,8 @@ public class NoC_2_2_ForcesOnManyObjects: MonoBehaviour
 	{
 		for (int i = 0; i < Movers.Length; i++) 
 		{
-			Movers[i].ApplyForce (WindForce);
-			Movers[i].ApplyForce (Gravity);
+			Movers[i].ApplyForce (WindForce * Time.deltaTime);
+			Movers[i].ApplyForce (Gravity * Time.deltaTime);
 			Movers[i].CheckEdges (AreaSize.x, AreaSize.y);
 		}
 	}

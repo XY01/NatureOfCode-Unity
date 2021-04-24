@@ -4,7 +4,7 @@ using System.Collections;
 public class Mover21 : MonoBehaviour 
 {
 	Vector3 		Location;
-	Vector3 		Velocity;
+	public Vector3 		Velocity;
 	Vector3 		Acceleration;
 	public float 	Mass = 1;
 
